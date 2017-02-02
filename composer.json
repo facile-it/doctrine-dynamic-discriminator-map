@@ -1,0 +1,48 @@
+{
+  "name": "facile/doctrine-dynamic-discriminator-map",
+  "description": "Dynamic discriminator map for Doctrine ORM",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "keywords": [
+    "doctrine",
+    "orm",
+    "discriminator",
+    "inheritance",
+    "map"
+  ],
+  "authors": [
+    {
+      "name": "Thomas Vargiu",
+      "email": "thomas.vargiu@facile.it"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "doctrine/orm": "^2.4",
+    "container-interop/container-interop": "^1.0"
+  },
+  "require-dev": {
+    "facile/facile-coding-standard": "dev-master",
+    "phpunit/phpunit": "^5.7",
+    "doctrine/data-fixtures": "^1.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Facile\\DoctrineDDM\\": ["src/"]
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Facile\\DoctrineDDMTest\\": ["tests/DoctrineDDMTest/"]
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit",
+    "cs-check": "php-cs-fixer fix --dry-run --diff",
+    "cs-fix": "php-cs-fixer fix --diff",
+    "tests": [
+      "@cs-check",
+      "phpunit"
+    ]
+  }
+}
