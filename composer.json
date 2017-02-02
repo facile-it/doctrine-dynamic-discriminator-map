@@ -1,5 +1,5 @@
 {
-  "name": "facile/doctrine-dynamic-discriminator-map",
+  "name": "facile-it/doctrine-dynamic-discriminator-map",
   "description": "Dynamic discriminator map for Doctrine ORM",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "container-interop/container-interop": "^1.0"
   },
   "require-dev": {
-    "facile/facile-coding-standard": "dev-master",
+    "facile-it/facile-coding-standard": "dev-master",
     "phpunit/phpunit": "^5.7",
     "phpspec/prophecy": "^1.6.0",
     "doctrine/data-fixtures": "^1.2"

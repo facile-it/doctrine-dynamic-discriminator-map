@@ -1,11 +1,10 @@
 Doctrine Dynamic Discriminator Map
 ----------------------------------
 
-[![Latest Stable Version](https://poser.pugx.org/facile/doctrine-dynamic-discriminator-map/version)](https://packagist.org/packages/facile/doctrine-dynamic-discriminator-map)
-[![Total Downloads](https://poser.pugx.org/facile/doctrine-dynamic-discriminator-map/version/downloads)](https://packagist.org/packages/facile/doctrine-dynamic-discriminator-map/version)
-[![Latest Unstable Version](https://poser.pugx.org/facile/doctrine-dynamic-discriminator-map/version/v/unstable)](//packagist.org/packages/facile/doctrine-dynamic-discriminator-map/version)
-[![License](https://poser.pugx.org/facile/doctrine-dynamic-discriminator-map/version/license)](https://packagist.org/packages/facile/doctrine-dynamic-discriminator-map/version)
-
+[![Latest Stable Version](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/v/stable)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
+[![Total Downloads](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/downloads)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
+[![Latest Unstable Version](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/v/unstable)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
+[![License](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/license)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
 
 Adds ability do declare entity discriminator map using a configuration.
 
@@ -13,7 +12,7 @@ Installation
 ============
 
 ```
-$ composer require facile/doctrine-dynamic-discriminator-map
+$ composer require facile-it/doctrine-dynamic-discriminator-map
 ```
 
 ### Register the listener on Doctrine Event Manager
