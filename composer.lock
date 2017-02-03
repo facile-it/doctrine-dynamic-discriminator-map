@@ -926,12 +926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/facile-it/facile-coding-standard.git",
-                "reference": "be797b7844ef104527d59d0ac1230936ad5243a2"
+                "reference": "00965893eb9aa41aa06a464770f9a75ff5237541"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facile-it/facile-coding-standard/zipball/be797b7844ef104527d59d0ac1230936ad5243a2",
-                "reference": "be797b7844ef104527d59d0ac1230936ad5243a2",
+                "url": "https://api.github.com/repos/facile-it/facile-coding-standard/zipball/00965893eb9aa41aa06a464770f9a75ff5237541",
+                "reference": "00965893eb9aa41aa06a464770f9a75ff5237541",
                 "shasum": ""
             },
             "require": {
@@ -949,7 +949,7 @@
                 "facile",
                 "facile.it"
             ],
-            "time": "2017-02-02 18:27:37"
+            "time": "2017-02-02T22:08:21+00:00"
         },
         {
             "name": "friendsofphp/php-cs-fixer",
