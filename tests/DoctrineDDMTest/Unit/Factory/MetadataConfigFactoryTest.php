@@ -29,7 +29,7 @@ class MetadataConfigFactoryTest extends TestCase
     public function testInvokeWithConfig()
     {
         $config = [
-            'doctrine_dynamic_discriminator_map' => [
+            MetadataConfigFactory::class => [
                 'class1' => [
                     'discriminator_map' => [
                         'foo' => 'bar',

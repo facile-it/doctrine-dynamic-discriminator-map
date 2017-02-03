@@ -10,11 +10,6 @@ use Interop\Container\ContainerInterface;
 class MetadataConfigFactory
 {
     /**
-     * @var string
-     */
-    const CONFIG_KEY = 'doctrine_dynamic_discriminator_map';
-
-    /**
      * @param ContainerInterface $container
      *
      * @throws \Interop\Container\Exception\ContainerException
@@ -26,7 +21,7 @@ class MetadataConfigFactory
     {
         $config = $container->get('config');
 
-        return $this->createMetadata($config[self::CONFIG_KEY] ?? []);
+        return $this->createMetadata($config[self::class] ?? []);
     }
 
     /**

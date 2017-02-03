@@ -48,7 +48,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
             $eventManager = new EventManager();
             $eventManager->addEventSubscriber(
                 new MetadataListener(
-                    $metadataConfigFactory->createMetadata($this->getArrayConfig()[MetadataConfigFactory::CONFIG_KEY])
+                    $metadataConfigFactory->createMetadata($this->getArrayConfig()[MetadataConfigFactory::class])
                 )
             );
             $config = Setup::createAnnotationMetadataConfiguration(

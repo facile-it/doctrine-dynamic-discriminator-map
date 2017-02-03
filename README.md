@@ -1,6 +1,9 @@
 Doctrine Dynamic Discriminator Map
 ----------------------------------
 
+[![Build Status](https://api.travis-ci.org/facile-it/doctrine-dynamic-discriminator-map.svg?branch=master)](https://travis-ci.org/facile-it/doctrine-dynamic-discriminator-map)
+[![Code Coverage](https://scrutinizer-ci.com/g/facile-it/doctrine-dynamic-discriminator-map/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/facile-it/doctrine-dynamic-discriminator-map/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/facile-it/doctrine-dynamic-discriminator-map/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/facile-it/doctrine-dynamic-discriminator-map/?branch=master)
 [![Latest Stable Version](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/v/stable)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
 [![Total Downloads](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/downloads)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
 [![Latest Unstable Version](https://poser.pugx.org/facile-it/doctrine-dynamic-discriminator-map/v/unstable)](https://packagist.org/packages/facile-it/doctrine-dynamic-discriminator-map)
@@ -165,7 +168,7 @@ return [
         ],
     ],
     // declare discriminator map configuration used by MetadataConfigFactory
-    MetadataConfigFactory::CONFIG_KEY => [
+    MetadataConfigFactory::class => [
         Entity\Person::class => [ // parent class
             'discriminator_map' => [
                 'teacher' => Entity\Teacher::class, // child class
