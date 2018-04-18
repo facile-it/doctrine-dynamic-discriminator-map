@@ -16,6 +16,12 @@
       "email": "thomas.vargiu@facile.it"
     }
   ],
+  "extra": {
+    "zf": {
+      "component": "Facile\\DoctrineDDM",
+      "config-provider": "Facile\\DoctrineDDM\\ConfigProvider"
+    }
+  },
   "require": {
     "php": "^7.0",
     "doctrine/orm": "^2.4",
