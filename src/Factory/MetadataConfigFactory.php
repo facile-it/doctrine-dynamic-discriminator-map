@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Facile\DoctrineDDM\Factory;
 
 use Facile\DoctrineDDM\Configuration;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class MetadataConfigFactory
 {
