@@ -15,7 +15,6 @@ use Facile\DoctrineDDMTest\Assets\Fixture\PersonFixture;
 use Facile\DoctrineDDMTest\Assets\Fixture\StudentFixture;
 use Facile\DoctrineDDMTest\Assets\Fixture\TeacherFixture;
 use Facile\DoctrineDDMTest\Framework\TestCase;
-use phpDocumentor\Reflection\Types\Void_;
 
 class MetadataListenerTest extends TestCase
 {
