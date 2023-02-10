@@ -11,7 +11,7 @@ use Doctrine\ORM\Tools\Setup;
 use Facile\DoctrineDDM\Factory\MetadataConfigFactory;
 use Facile\DoctrineDDM\MetadataListener;
 
-class TestCase extends \PHPUnit_Framework_TestCase
+class TestCase extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EntityManager
