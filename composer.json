@@ -51,5 +51,10 @@
       "@cs-check",
       "phpunit"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "facile-it/facile-coding-standard": true
+    }
   }
 }
