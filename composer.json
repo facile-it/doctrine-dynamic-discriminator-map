@@ -29,9 +29,12 @@
   },
   "require-dev": {
     "facile-it/facile-coding-standard": "dev-master",
-    "phpunit/phpunit": "^8.0",
+    "phpunit/phpunit": "^9.0",
     "phpspec/prophecy": "^1.6.0",
-    "doctrine/data-fixtures": "^1.2"
+    "doctrine/data-fixtures": "^1.2",
+    "doctrine/cache": "1.11",
+    "doctrine/annotations": "^1.12",
+    "doctrine/common": "3.0"
   },
   "autoload": {
     "psr-4": {
