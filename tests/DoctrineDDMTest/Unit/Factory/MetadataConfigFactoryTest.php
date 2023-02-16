@@ -15,7 +15,7 @@ class MetadataConfigFactoryTest extends TestCase
     public function testInvoke()
     {
         $config = [];
-        $container = $this->prophesize(ContainerInterface::class);
+        $container = $this->prophet->prophesize(ContainerInterface::class);
         $container->get('config')->willReturn($config);
 
         $factory = new MetadataConfigFactory();
@@ -37,7 +37,7 @@ class MetadataConfigFactoryTest extends TestCase
                 ],
             ],
         ];
-        $container = $this->prophesize(ContainerInterface::class);
+        $container = $this->prophet->prophesize(ContainerInterface::class);
         $container->get('config')->willReturn($config);
 
         $factory = new MetadataConfigFactory();

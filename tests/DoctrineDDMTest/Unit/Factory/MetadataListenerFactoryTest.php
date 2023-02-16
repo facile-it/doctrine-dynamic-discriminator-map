@@ -14,8 +14,8 @@ class MetadataListenerFactoryTest extends TestCase
 {
     public function testInvoke()
     {
-        $metadataConfig = $this->prophesize(Metadata::class);
-        $container = $this->prophesize(ContainerInterface::class);
+        $metadataConfig = $this->prophet->prophesize(Metadata::class);
+        $container = $this->prophet->prophesize(ContainerInterface::class);
         $container->get(Metadata::class)->willReturn($metadataConfig->reveal());
 
         $factory = new MetadataListenerFactory();

@@ -27,6 +27,11 @@ class TestCase extends \PHPUnit\Framework\TestCase
     protected $arrayConfig;
 
     /**
+     * @var \Prophecy\Prophet
+     */
+    protected  $prophet;
+
+    /**
      * @return array
      */
     public function getArrayConfig(): array
@@ -95,5 +100,15 @@ class TestCase extends \PHPUnit\Framework\TestCase
         $em->clear();
 
         $this->hasDb = false;
+    }
+
+    protected function setUp():void
+    {
+        $this->prophet = new \Prophecy\Prophet;
+    }
+
+    protected function tearDown():void
+    {
+        $this->prophet->checkPredictions();
     }
 }
