@@ -23,10 +23,10 @@ class MetadataTest extends TestCase
     {
         $metadata = new Metadata();
 
-        $fooEntityMetadata = $this->prophesize(EntityMetadata::class);
+        $fooEntityMetadata = $this->prophet->prophesize(EntityMetadata::class);
         $fooEntityMetadata->getEntityClass()->willReturn('foo');
 
-        $barEntityMetadata = $this->prophesize(EntityMetadata::class);
+        $barEntityMetadata = $this->prophet->prophesize(EntityMetadata::class);
         $barEntityMetadata->getEntityClass()->willReturn('bar');
 
         $metadata->setEntityMetadatas([
@@ -49,10 +49,10 @@ class MetadataTest extends TestCase
 
         $metadata = new Metadata();
 
-        $fooEntityMetadata1 = $this->prophesize(EntityMetadata::class);
+        $fooEntityMetadata1 = $this->prophet->prophesize(EntityMetadata::class);
         $fooEntityMetadata1->getEntityClass()->willReturn('foo');
 
-        $fooEntityMetadata2 = $this->prophesize(EntityMetadata::class);
+        $fooEntityMetadata2 = $this->prophet->prophesize(EntityMetadata::class);
         $fooEntityMetadata2->getEntityClass()->willReturn('foo');
 
         $metadata->addEntityMetadata($fooEntityMetadata1->reveal());
@@ -63,7 +63,7 @@ class MetadataTest extends TestCase
     {
         $metadata = new Metadata();
 
-        $fooEntityMetadata = $this->prophesize(EntityMetadata::class);
+        $fooEntityMetadata = $this->prophet->prophesize(EntityMetadata::class);
         $fooEntityMetadata->getEntityClass()->willReturn('foo');
 
         $metadata->setEntityMetadatas([

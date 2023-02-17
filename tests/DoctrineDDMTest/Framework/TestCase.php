@@ -11,7 +11,7 @@ use Doctrine\ORM\Tools\Setup;
 use Facile\DoctrineDDM\Factory\MetadataConfigFactory;
 use Facile\DoctrineDDM\MetadataListener;
 
-class TestCase extends \PHPUnit_Framework_TestCase
+class TestCase extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var EntityManager
@@ -25,6 +25,11 @@ class TestCase extends \PHPUnit_Framework_TestCase
      * @var array
      */
     protected $arrayConfig;
+
+    /**
+     * @var \Prophecy\Prophet
+     */
+    protected  $prophet;
 
     /**
      * @return array
@@ -95,5 +100,15 @@ class TestCase extends \PHPUnit_Framework_TestCase
         $em->clear();
 
         $this->hasDb = false;
+    }
+
+    protected function setUp():void
+    {
+        $this->prophet = new \Prophecy\Prophet;
+    }
+
+    protected function tearDown():void
+    {
+        $this->prophet->checkPredictions();
     }
 }

@@ -136,7 +136,7 @@ where it expects the discriminator map configuration and returns a
 a configured `Facile\DoctrineDDM\MetadataListener` instance.
 
 
-### Zend Framework and Zend Expressive
+### Laminas Framework and Mezzio
 
 With [DoctrineORMModule](https://github.com/doctrine/DoctrineORMModule):
 
@@ -149,7 +149,7 @@ use Facile\DoctrineDDM\Configuration\Metadata;
 use My\Namespace\Entity;
 
 return [
-    'service_manager' => [ // or "dependencies" for zend-expressive
+    'service_manager' => [ // or "dependencies" for Mezzio
         'factories' => [
             // register the configuration factory
             Metadata::class => MetadataConfigFactory::class,

@@ -15,11 +15,12 @@ class MetadataListenerTest extends TestCase
      */
     protected $listener;
 
-    protected function setUp()
+
+    protected function setUp() :void
     {
         parent::setUp();
 
-        $config = $this->prophesize(Metadata::class);
+        $config = $this->prophet->prophesize(Metadata::class);
         $this->listener = new MetadataListener($config->reveal());
     }
 

@@ -5,15 +5,17 @@ declare(strict_types=1);
 namespace Facile\DoctrineDDM\Factory;
 
 use Facile\DoctrineDDM\Configuration;
-use Interop\Container\ContainerInterface;
+use Facile\DoctrineDDM\Exception\InvalidArgumentException;
+use Psr\Container\ContainerExceptionInterface;
+use Psr\Container\ContainerInterface;
 
 class MetadataConfigFactory
 {
     /**
      * @param ContainerInterface $container
      *
-     * @throws \Interop\Container\Exception\ContainerException
-     * @throws \Facile\DoctrineDDM\Exception\InvalidArgumentException
+     * @throws ContainerExceptionInterface If any other error occurs.
+     * @throws InvalidArgumentException
      *
      * @return Configuration\Metadata
      */
@@ -27,7 +29,7 @@ class MetadataConfigFactory
     /**
      * @param array $configuration
      *
-     * @throws \Facile\DoctrineDDM\Exception\InvalidArgumentException
+     * @throws InvalidArgumentException
      *
      * @return Configuration\Metadata
      */

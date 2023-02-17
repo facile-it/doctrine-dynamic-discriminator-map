@@ -23,15 +23,18 @@
     }
   },
   "require": {
-    "php": "^7.0",
+    "php": "^7.2 || ^8.0",
     "doctrine/orm": "^2.4",
-    "container-interop/container-interop": "^1.0"
+    "psr/container": "^1.0 || ^2.0"
   },
   "require-dev": {
     "facile-it/facile-coding-standard": "dev-master",
-    "phpunit/phpunit": "^5.7",
+    "phpunit/phpunit": "^9.0",
     "phpspec/prophecy": "^1.6.0",
-    "doctrine/data-fixtures": "^1.2"
+    "doctrine/data-fixtures": "^1.2",
+    "doctrine/cache": "1.11",
+    "doctrine/annotations": "^1.12",
+    "doctrine/common": "3.0"
   },
   "autoload": {
     "psr-4": {
@@ -51,5 +54,10 @@
       "@cs-check",
       "phpunit"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "facile-it/facile-coding-standard": true
+    }
   }
 }
