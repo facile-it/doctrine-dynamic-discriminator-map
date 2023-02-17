@@ -136,7 +136,7 @@ where it expects the discriminator map configuration and returns a
 a configured `Facile\DoctrineDDM\MetadataListener` instance.
 
 
-### Laminas Framework and Mezzio Expressive
+### Laminas Framework and Mezzio
 
 With [DoctrineORMModule](https://github.com/doctrine/DoctrineORMModule):
 
