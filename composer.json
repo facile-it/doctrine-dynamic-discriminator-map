@@ -62,9 +62,6 @@
   "config": {
     "allow-plugins": {
       "facile-it/facile-coding-standard": true
-    },
-    "platform": {
-      "php": "8.0"
     }
   }
 }
