@@ -8,7 +8,7 @@ use Facile\DoctrineDDM\Configuration\Metadata;
 use Facile\DoctrineDDM\Factory\MetadataListenerFactory;
 use Facile\DoctrineDDM\MetadataListener;
 use Facile\DoctrineDDMTest\Framework\TestCase;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class MetadataListenerFactoryTest extends TestCase
 {

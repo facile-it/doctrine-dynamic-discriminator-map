@@ -39,8 +39,6 @@ class Metadata
     }
 
     /**
-     * @param EntityMetadata $entityMetadata
-     *
      * @throws \Facile\DoctrineDDM\Exception\InvalidArgumentException
      */
     public function addEntityMetadata(EntityMetadata $entityMetadata)
@@ -55,8 +53,6 @@ class Metadata
     }
 
     /**
-     * @param string $entityClass
-     *
      * @return EntityMetadata|null
      */
     public function getEntityMetadata(string $entityClass)

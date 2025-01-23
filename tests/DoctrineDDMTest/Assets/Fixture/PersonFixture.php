@@ -11,7 +11,7 @@ use Facile\DoctrineDDMTest\Assets\Entity\Person;
 class PersonFixture extends AbstractFixture
 {
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function load(ObjectManager $manager)
     {

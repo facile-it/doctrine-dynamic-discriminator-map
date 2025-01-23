@@ -11,7 +11,7 @@ use Facile\DoctrineDDMTest\Assets\Entity\Teacher;
 class TeacherFixture extends AbstractFixture
 {
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function load(ObjectManager $manager)
     {

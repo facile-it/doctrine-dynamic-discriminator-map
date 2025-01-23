@@ -6,7 +6,7 @@ namespace Facile\DoctrineDDM\Factory;
 
 use Facile\DoctrineDDM\Configuration\Metadata;
 use Facile\DoctrineDDM\MetadataListener;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 /**
  * Class MetadataListenerFactory.
@@ -15,12 +15,6 @@ class MetadataListenerFactory
 {
     /**
      * Create service.
-     *
-     * @param ContainerInterface $container
-     *
-     * @throws \Interop\Container\Exception\ContainerException
-     *
-     * @return MetadataListener
      */
     public function __invoke(ContainerInterface $container): MetadataListener
     {

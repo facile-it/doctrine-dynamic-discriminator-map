@@ -23,8 +23,6 @@ class MetadataListener implements EventSubscriber
 
     /**
      * MetadataListener constructor.
-     *
-     * @param Configuration $metadataConfig
      */
     public function __construct(Configuration $metadataConfig)
     {
@@ -41,9 +39,6 @@ class MetadataListener implements EventSubscriber
         return ['loadClassMetadata'];
     }
 
-    /**
-     * @param LoadClassMetadataEventArgs $event
-     */
     public function loadClassMetadata(LoadClassMetadataEventArgs $event)
     {
         /** @var ClassMetadata $metadata */

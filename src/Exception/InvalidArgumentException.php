@@ -7,6 +7,4 @@ namespace Facile\DoctrineDDM\Exception;
 /**
  * Class InvalidArgumentException.
  */
-class InvalidArgumentException extends \InvalidArgumentException
-{
-}
+class InvalidArgumentException extends \InvalidArgumentException {}

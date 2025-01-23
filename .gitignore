@@ -3,3 +3,4 @@ phpunit.xml
 .php-cs-fixer.php
 .php_cs.cache
 .phpunit.result.cache
+.php-cs-fixer.cache

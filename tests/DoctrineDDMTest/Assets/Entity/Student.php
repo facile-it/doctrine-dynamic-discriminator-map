@@ -9,6 +9,4 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * @ORM\Entity
  */
-class Student extends Person
-{
-}
+class Student extends Person {}

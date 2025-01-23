@@ -10,37 +10,36 @@ use Doctrine\ORM\Tools\SchemaTool;
 use Doctrine\ORM\Tools\Setup;
 use Facile\DoctrineDDM\Factory\MetadataConfigFactory;
 use Facile\DoctrineDDM\MetadataListener;
+use Prophecy\PhpUnit\ProphecyTrait;
 
 class TestCase extends \PHPUnit\Framework\TestCase
 {
+    use ProphecyTrait;
+
     /**
      * @var EntityManager
      */
     protected $entityManager;
+
     /**
      * @var bool
      */
     protected $hasDb = false;
+
     /**
      * @var array
      */
     protected $arrayConfig;
 
-    /**
-     * @return array
-     */
     public function getArrayConfig(): array
     {
         if (! $this->arrayConfig) {
-            $this->arrayConfig = include __DIR__.'./../../config/testing.config.php';
+            $this->arrayConfig = include __DIR__ . './../../config/testing.config.php';
         }
 
         return $this->arrayConfig;
     }
 
-    /**
-     * @return EntityManager
-     */
     public function getEntityManager(): EntityManager
     {
         if (! $this->entityManager) {
@@ -52,7 +51,7 @@ class TestCase extends \PHPUnit\Framework\TestCase
                 )
             );
             $config = Setup::createAnnotationMetadataConfiguration(
-                [__DIR__.'/../Assets'],
+                [__DIR__ . '/../Assets'],
                 true,
                 null,
                 null,

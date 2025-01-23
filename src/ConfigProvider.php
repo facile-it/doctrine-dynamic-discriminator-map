@@ -19,8 +19,6 @@ class ConfigProvider
 
     /**
      * Return default service mappings for zend-cache.
-     *
-     * @return array
      */
     public function getDependencyConfig(): array
     {

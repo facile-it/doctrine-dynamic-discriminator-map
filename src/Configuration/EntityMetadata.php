@@ -13,6 +13,7 @@ class EntityMetadata
      * @var string
      */
     protected $entityClass;
+
     /**
      * @var array
      */
@@ -20,9 +21,6 @@ class EntityMetadata
 
     /**
      * EntityMetadata constructor.
-     *
-     * @param string $entityClass
-     * @param array  $discriminatorMap
      */
     public function __construct(string $entityClass, array $discriminatorMap = [])
     {
@@ -30,33 +28,21 @@ class EntityMetadata
         $this->discriminatorMap = $discriminatorMap;
     }
 
-    /**
-     * @return string
-     */
     public function getEntityClass(): string
     {
         return $this->entityClass;
     }
 
-    /**
-     * @param string $entityClass
-     */
     public function setEntityClass(string $entityClass)
     {
         $this->entityClass = $entityClass;
     }
 
-    /**
-     * @return array
-     */
     public function getDiscriminatorMap(): array
     {
         return $this->discriminatorMap;
     }
 
-    /**
-     * @param array $discriminatorMap
-     */
     public function setDiscriminatorMap(array $discriminatorMap)
     {
         $this->discriminatorMap = $discriminatorMap;

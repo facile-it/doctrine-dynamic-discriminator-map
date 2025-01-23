@@ -8,7 +8,7 @@ use Facile\DoctrineDDM\Configuration\EntityMetadata;
 use Facile\DoctrineDDM\Configuration\Metadata;
 use Facile\DoctrineDDM\Factory\MetadataConfigFactory;
 use Facile\DoctrineDDMTest\Framework\TestCase;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class MetadataConfigFactoryTest extends TestCase
 {

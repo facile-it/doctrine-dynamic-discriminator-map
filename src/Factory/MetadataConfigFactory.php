@@ -5,14 +5,11 @@ declare(strict_types=1);
 namespace Facile\DoctrineDDM\Factory;
 
 use Facile\DoctrineDDM\Configuration;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 class MetadataConfigFactory
 {
     /**
-     * @param ContainerInterface $container
-     *
-     * @throws \Interop\Container\Exception\ContainerException
      * @throws \Facile\DoctrineDDM\Exception\InvalidArgumentException
      *
      * @return Configuration\Metadata
@@ -25,11 +22,7 @@ class MetadataConfigFactory
     }
 
     /**
-     * @param array $configuration
-     *
      * @throws \Facile\DoctrineDDM\Exception\InvalidArgumentException
-     *
-     * @return Configuration\Metadata
      */
     public function createMetadata(array $configuration): Configuration\Metadata
     {
@@ -44,12 +37,6 @@ class MetadataConfigFactory
         return $metadata;
     }
 
-    /**
-     * @param string $entity
-     * @param array  $configuration
-     *
-     * @return Configuration\EntityMetadata
-     */
     protected function createEntityMetadata(string $entity, array $configuration): Configuration\EntityMetadata
     {
         return new Configuration\EntityMetadata($entity, $configuration['discriminator_map'] ?? []);
