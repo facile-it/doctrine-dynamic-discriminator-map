@@ -17,30 +17,35 @@
     }
   ],
   "extra": {
-    "zf": {
+    "laminas": {
       "component": "Facile\\DoctrineDDM",
       "config-provider": "Facile\\DoctrineDDM\\ConfigProvider"
     }
   },
   "require": {
-    "php": "^7.0",
-    "doctrine/orm": "^2.4",
+    "php": "^8.0",
+    "doctrine/orm": "^2.6.6",
     "container-interop/container-interop": "^1.0"
   },
   "require-dev": {
-    "facile-it/facile-coding-standard": "dev-master",
-    "phpunit/phpunit": "^5.7",
+    "facile-it/facile-coding-standard": "^1.3",
+    "phpunit/phpunit": "^8.0",
     "phpspec/prophecy": "^1.6.0",
-    "doctrine/data-fixtures": "^1.2"
+    "doctrine/data-fixtures": "^1.2.2",
+    "symfony/cache": "^7.2"
   },
   "autoload": {
     "psr-4": {
-      "Facile\\DoctrineDDM\\": ["src/"]
+      "Facile\\DoctrineDDM\\": [
+        "src/"
+      ]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Facile\\DoctrineDDMTest\\": ["tests/DoctrineDDMTest/"]
+      "Facile\\DoctrineDDMTest\\": [
+        "tests/DoctrineDDMTest/"
+      ]
     }
   },
   "scripts": {
@@ -51,5 +56,10 @@
       "@cs-check",
       "phpunit"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "facile-it/facile-coding-standard": true
+    }
   }
 }

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Facile\DoctrineDDMTest\Assets\Fixture;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 use Facile\DoctrineDDMTest\Assets\Entity\Student;
 
 class StudentFixture extends AbstractFixture
